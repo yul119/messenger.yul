@@ -42,14 +42,14 @@ const Login = () => {
         <Button content='Sign in' className='bg-primaryColor text-white mt-4' />
         <Button
           content='Sign in with Google'
-          className='bg-slate-100 text-slate-700 border-[1px] border-stone-300 mt-2 md:mt-3'
+          className='bg-slate-200 text-slate-700 border-[1px] border-stone-300 mt-2 md:mt-3'
           children={<FcGoogle className='mr-2 text-[20px]' />}
         />
         <Button
           content='Sign in with Facebook'
-          className='bg-slate-100 text-slate-700 border-[1px] border-stone-300 mt-2 md:mt-3'
+          className='bg-[#415792] text-white border-[1px] mt-2 md:mt-3'
           children={
-            <FaFacebookSquare className='mr-2 text-[20px] text-primaryColor' />
+            <FaFacebookSquare className='mr-2 text-[20px] text-white' />
           }
         />
       </div>
