@@ -8,13 +8,15 @@ import { FaFacebookSquare } from 'react-icons/fa';
 
 const Login = () => {
   return (
-    <div className='w-5/6 h-5/6 flex-col justify-center items-center'>
-      <h1 className='text-center font-semibold md:text-3xl'>Message.yul</h1>
-      <p className='text-xs md:text-sm text-slate-600 mt-2 text-center'>
-        Wellcome back! Please enter your details.
-      </p>
+    <div className='w-4/5 flex-col justify-center items-center'>
+      <div className=''>
+        <h1 className='text-center font-semibold md:text-3xl'>Message.yul</h1>
+        <p className='text-xs md:text-sm text-slate-600 mt-2 text-center'>
+          Wellcome back! Please enter your details.
+        </p>
+      </div>
 
-      <div className='mt-6 md:mx-6'>
+      <div className='mt-6'>
         <Input label='Username' placeholder='Username' name='username' />
         <Input
           label='Password'
@@ -24,7 +26,7 @@ const Login = () => {
         />
       </div>
 
-      <div className='flex mt-4 justify-between md:mx-6'>
+      <div className='flex mt-4 justify-between'>
         <div className='flex items-center'>
           <Checkbox label='Remember' />
         </div>
@@ -38,16 +40,16 @@ const Login = () => {
         </div>
       </div>
 
-      <div className=' md:mx-6'>
+      <div className=''>
         <Button content='Sign in' className='bg-primaryColor text-white mt-4' />
         <Button
           content='Sign in with Google'
-          className='bg-slate-200 text-slate-700 border-[1px] border-stone-300 mt-2 md:mt-3'
+          className='bg-slate-200 text-slate-700 border-[1px] border-stone-300 mt-3 md:mt-3'
           children={<FcGoogle className='mr-2 text-[20px]' />}
         />
         <Button
           content='Sign in with Facebook'
-          className='bg-[#415792] text-white border-[1px] mt-2 md:mt-3'
+          className='bg-[#415792] text-white border-[1px] mt-3 md:mt-3'
           children={
             <FaFacebookSquare className='mr-2 text-[20px] text-white' />
           }
@@ -60,7 +62,7 @@ const Login = () => {
         </p>
         <Link
           to='/auth/register'
-          className='text-[13px] md:text-sm text-primaryColor'
+          className='text-[13px] md:text-sm text-primaryColor font-medium'
         >
           Sign up
         </Link>

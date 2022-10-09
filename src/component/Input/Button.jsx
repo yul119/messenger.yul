@@ -4,7 +4,7 @@ const Button = ({ content, className, children }) => {
   return (
     <div
       className={
-        'w-full py-1 md:py-2 text-sm md:text-base text-center rounded-md flex justify-center items-center hover:bg-opacity-70  ' +
+        'w-full py-2 md:py-[9px] text-sm md:text-base text-center rounded-md flex justify-center items-center hover:bg-opacity-70  ' +
         className
       }
     >
