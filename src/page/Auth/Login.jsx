@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../../component/Input';
-import Button from '../../component/Input/Button';
+import Button from '../../component/Button/Button';
 import { Checkbox } from '../../component/Input/Checkbox';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebookSquare } from 'react-icons/fa';
@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <div className='w-4/5 flex-col justify-center items-center'>
       <div className=''>
-        <h1 className='text-center font-semibold md:text-3xl'>Message.yul</h1>
+        <h1 className='text-center font-semibold md:text-3xl'>Messenger.yul</h1>
         <p className='text-xs md:text-sm text-slate-600 mt-2 text-center'>
           Wellcome back! Please enter your details.
         </p>
