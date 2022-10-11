@@ -11,7 +11,7 @@ const MessageInput = ({ className, ...props }) => {
       <HiOutlineEmojiHappy className='iconMessageInput' />
       <AiFillPicture className='iconMessageInput' />
       <input
-        className='w-[70%] md:w-[90%] border-none outline-none px-4 md:px-8 py-1 md:py-2 rounded-2xl md:rounded-3xl'
+        className='placeholder:text-slate-400 block border border-slate-300  w-[70%] md:w-[90%]  outline-none px-4 md:px-8 py-1 md:py-2 rounded-2xl md:rounded-3xl'
         type='text'
         {...props}
       />
