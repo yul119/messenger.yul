@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from '../Avatar';
 
 const Chat = ({ isActive }) => {
   return (
@@ -8,24 +9,18 @@ const Chat = ({ isActive }) => {
       } rounded-2xl md:p-3 md:px-2 md:py-1`}
     >
       <div className='flex justify-between items-center'>
-        <div className='w-[5rem] h-[5rem] md:w-14 md:h-14 rounded-full flex-shrink-0'>
-          <img
-            className='w-full h-full object-cover rounded-full'
-            src='https://placekitten.com/g/400/400'
-            alt='avt'
-          />
-        </div>
-        <div className='hidden md:block ml-2 flex-col'>
-          <h2 className='font-medium md:text-sm lg:text-base xl:text-lg'>
+        <Avatar className='w-[5rem] h-[5rem] md:w-14 md:h-14 flex-shrink-0' />
+        <div className='hidden lg:block ml-2 flex-col'>
+          <h2 className='font-medium lg:text-base xl:text-lg'>
             Dang Thanh Long
           </h2>
-          <p className='text-sm text-slate-600 text-ellipsis hidden xl:block'>
-            asfd asfd asfd asd
+          <p className='hidden xl:smText xl:block'>
+            asfd asdf asdf asfd asdf asdf asfd asfd asd
           </p>
         </div>
       </div>
       <div className='hidden md:block'>
-        <p className='text-slate-800'>20:01</p>
+        <p className='text-slate-700 text-[0.8rem] pb-4'>20:01</p>
       </div>
     </div>
   );

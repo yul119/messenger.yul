@@ -1,24 +1,38 @@
 import React from 'react';
+import Header from '../Header';
+import CircleButton from '../Button/CircleButton';
+import { FiSettings } from 'react-icons/fi';
+import { MdPersonAddAlt } from 'react-icons/md';
+import Chatbox from './Chatbox';
+import MessageInput from './MessageInput';
 
-const Index = () => {
+const Message = () => {
+  const isGroup = false;
+
   return (
-    <div className='bg-stone-100 overflow-y-auto h-full'>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-      facilis natus praesentium pariatur enim iure obcaecati quod quibusdam
-      quisquam vel placeat non ratione, accusantium quam ducimus labore
-      excepturi voluptatibus iste. facilis natus praesentium pariatur enim iure
-      obcaecati quod quibusdam quisquam vel placeat non ratione, accusantium
-      quam ducimus labore excepturi voluptatibus iste. facilis natus praesentium
-      pariatur enim iure obcaecati quod quibusdam quisquam vel placeat non
-      ratione, accusantium quam ducimus labore excepturi voluptatibus iste.
-      facilis natus praesentium pariatur enim iure obcaecati quod quibusdam
-      quisquam vel placeat non ratione, accusantium quam ducimus labore
-      excepturi voluptatibus iste.
+    <div className='h-[75%] md:h-screen relative before:bgMessage'>
+      <Header imgClassName='w-14 h-14' className='hidden md:flex md:px-4'>
+        {isGroup && (
+          <CircleButton
+            children={<MdPersonAddAlt className='text-[18] text-stone-600' />}
+          />
+        )}
+        <CircleButton
+          className='ml-2'
+          children={<FiSettings className='text-[18] text-stone-600' />}
+        />
+      </Header>
+
+      {/* <div className='bg-transparent'> */}
+      <Chatbox className='h-[90%] md:h-[80%]' />
+      <MessageInput
+        name='messInput'
+        placeholder='Type a message'
+        className='h-[10%] md:h-[10%]'
+      />
+      {/* </div> */}
     </div>
   );
 };
 
-export default Index;
+export default Message;
