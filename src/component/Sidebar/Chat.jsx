@@ -6,7 +6,7 @@ const Chat = ({ isActive }) => {
     <div
       className={`flex justify-center items-center mx-1 md:mx-0 md:justify-between md:w-full md:p-2 hover:md:bg-slate-200 ${
         isActive ? 'md:bg-slate-200' : ''
-      } rounded-2xl md:p-3 md:px-2 md:py-1`}
+      } rounded-2xl md:p-3 md:px-2 md:py-1 md:my-[2px] cursor-pointer`}
     >
       <div className='flex justify-between items-center'>
         <Avatar className='w-[5rem] h-[5rem] md:w-14 md:h-14 flex-shrink-0' />

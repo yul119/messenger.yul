@@ -2,6 +2,7 @@ import React from 'react';
 import { HiOutlineEmojiHappy } from 'react-icons/hi';
 import { AiFillPicture } from 'react-icons/ai';
 import { AiFillLike } from 'react-icons/ai';
+import { FiSend } from 'react-icons/fi';
 
 const MessageInput = ({ className, ...props }) => {
   return (
@@ -16,6 +17,7 @@ const MessageInput = ({ className, ...props }) => {
         {...props}
       />
       <AiFillLike className='iconMessageInput' />
+      {/* <FiSend className='iconMessageInput' /> */}
     </div>
   );
 };

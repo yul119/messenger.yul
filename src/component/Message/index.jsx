@@ -7,7 +7,7 @@ import Chatbox from './Chatbox';
 import MessageInput from './MessageInput';
 
 const Message = () => {
-  const isGroup = false;
+  const isGroup = true;
 
   return (
     <div className='h-[75%] md:h-screen relative before:bgMessage'>
@@ -23,14 +23,12 @@ const Message = () => {
         />
       </Header>
 
-      {/* <div className='bg-transparent'> */}
       <Chatbox className='h-[90%] md:h-[80%]' />
       <MessageInput
         name='messInput'
         placeholder='Type a message'
         className='h-[10%] md:h-[10%]'
       />
-      {/* </div> */}
     </div>
   );
 };
